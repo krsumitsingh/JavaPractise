@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Test Suite-PO]">
+  <test name="Login Test">
+    <classes>
+      <class name="smokeTestCasesPO.TC01_Login"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test name="PO Search Screen">
+    <classes>
+      <class name="smokeTestCasesPO.TC02_POSearch"/>
+    </classes>
+  </test> <!-- PO Search Screen -->
+  <test name="Create a new PO">
+    <classes>
+      <class name="smokeTestCasesPO.TC07_NewPO"/>
+    </classes>
+  </test> <!-- Create a new PO -->
+</suite> <!-- Failed suite [Mercury Test Suite-PO] -->

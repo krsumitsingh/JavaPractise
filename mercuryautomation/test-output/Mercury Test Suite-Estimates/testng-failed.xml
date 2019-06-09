@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Test Suite-Estimates]">
+  <test name="Login Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC01_Login"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test name="Create Estimate Without Customer Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC02_estimate_without_customer"/>
+    </classes>
+  </test> <!-- Create Estimate Without Customer Test -->
+  <test name="Create Estimate Without Services Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC03_estimate_without_services"/>
+    </classes>
+  </test> <!-- Create Estimate Without Services Test -->
+  <test name="Create Estimate With Services Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC04_estimate_with_services"/>
+    </classes>
+  </test> <!-- Create Estimate With Services Test -->
+  <test name="Tax Calculation Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC05_estimate_taxcalculation"/>
+    </classes>
+  </test> <!-- Tax Calculation Test -->
+  <test name="Estimate With Wizard Services">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC06_estimate_with_wizardservices"/>
+    </classes>
+  </test> <!-- Estimate With Wizard Services -->
+  <test name="Estimate With SWF Services">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC07_estimate_with_swfservices"/>
+    </classes>
+  </test> <!-- Estimate With SWF Services -->
+  <test name="Estimate With AWF Services">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC08_estimate_with_awfservices"/>
+    </classes>
+  </test> <!-- Estimate With AWF Services -->
+  <test name="Estimate With Contract Template">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC09_estimate_contracttemplate"/>
+    </classes>
+  </test> <!-- Estimate With Contract Template -->
+  <test name="Export To Order Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC10_estimate_exportorder"/>
+    </classes>
+  </test> <!-- Export To Order Test -->
+  <test name="Copy Estimate Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC11_estimate_copy"/>
+    </classes>
+  </test> <!-- Copy Estimate Test -->
+  <test name="Add Attachments Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC12_estimate_attachments"/>
+    </classes>
+  </test> <!-- Add Attachments Test -->
+  <test name="Delete Estimate Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC13_estimate_DeleteEstimate"/>
+    </classes>
+  </test> <!-- Delete Estimate Test -->
+  <test name="Create Multiple Qty Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC14_estimate_multipleqty"/>
+    </classes>
+  </test> <!-- Create Multiple Qty Test -->
+  <test name="Print Calculator Test">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC15_estimate_printcalculator"/>
+    </classes>
+  </test> <!-- Print Calculator Test -->
+</suite> <!-- Failed suite [Mercury Test Suite-Estimates] -->

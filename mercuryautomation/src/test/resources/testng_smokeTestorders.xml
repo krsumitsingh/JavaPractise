@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mercury Test Suite-Orders">
+
+	<test name="Login Test">
+		<classes>
+			<class name="smokeTestCasesOrders.TC01_Login" />
+		</classes>
+	</test> <!-- Test -->
+
+		<test name="Order without customer">
+		<classes>
+			<class name="smokeTestCasesOrders.TC02_order_without_customer" />
+		</classes>
+	     </test> <!-- Test -->
+
+	<test name="Order without services">
+		<classes>
+			<class name="smokeTestCasesOrders.TC03_order_without_services" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Order with services">
+		<classes>
+			<class name="smokeTestCasesOrders.TC04_order_with_services" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Tax Calculation">
+		<classes>
+			<class name="smokeTestCasesOrders.TC05_order_taxcalculation" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Add Wizard Services">
+		<classes>
+			<class name="smokeTestCasesOrders.TC06_order_with_wizardservices" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Add Simple Wide Format Calculator">
+		<classes>
+			<class name="smokeTestCasesOrders.TC07_order_with_swfservices" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Add Advance Wide Format Calculator">
+		<classes>
+			<class name="smokeTestCasesOrders.TC08_order_with_awfservices" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Add Contract Template">
+		<classes>
+			<class name="smokeTestCasesOrders.TC09_order_contracttemplate" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Copy Order">
+		<classes>
+			<class name="smokeTestCasesOrders.TC10_order_copy" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Add Attachment">
+		<classes>
+			<class name="smokeTestCasesOrders.TC11_order_attachments" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Delete Order">
+		<classes>
+			<class name="smokeTestCasesOrders.TC12_order_DeleteOrder" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Launch PC In Orders">
+		<classes>
+			<class name="smokeTestCasesOrders.TC13_order_printcalculator" />
+		</classes>
+	</test> <!-- Test -->
+		
+	<test name="Version Copy ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC14_order_versioncopy" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Version Edit ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC15_order_versionedit" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Version Add ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC16_order_versionadd" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Version Delete ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC17_order_versiondelete" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Estimate Export ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC18_order_estimateexport" />
+		</classes>
+	</test> <!-- Test -->
+		
+	<test name="Single Drop ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC19_order_singledrop1" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Single Drop-Version Tab ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC20_order_singledrop_versiontab" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Multiple Drop-Single Version ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC21_order_multipledrop" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Multiple Drop Deletion ">
+		<classes>
+			<class name="smokeTestCasesOrders.TC22_order_deletedrop" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

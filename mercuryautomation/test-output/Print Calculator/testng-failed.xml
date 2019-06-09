@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Print Calculator]">
+  <test name="Login Test">
+    <classes>
+      <class name="testCasesPrintCalculator.TC01_Login"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test name="Create Print Calculator">
+    <classes>
+      <class name="testCasesPrintCalculator.TC02_PrintCalculator"/>
+    </classes>
+  </test> <!-- Create Print Calculator -->
+</suite> <!-- Failed suite [Print Calculator] -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mercury Test Suite-PO">
+
+	<test name="Login Test">
+		<classes>
+			<class name="smokeTestCasesPO.TC01_Login" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="PO Search Screen">
+		<classes>
+			<class name="smokeTestCasesPO.TC02_POSearch" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test name="Open PO record">
+		<classes>
+			<class name="smokeTestCasesPO.TC03_POOpen" />
+		</classes>
+	</test> Test -->
+
+	<!-- <test name="Copy PO">
+		<classes>
+			<class name="smokeTestCasesPO.TC04_POCopy" />
+		</classes>
+	</test> Test -->
+
+	<!-- <test name="Delete PO">
+		<classes>
+			<class name="smokeTestCasesPO.TC05_PODelete" />
+		</classes>
+	</test> Test -->
+
+	<!-- <test name="Create a new PO and cancel it">
+		<classes>
+			<class name="smokeTestCasesPO.TC06_NewPOCancel" />
+		</classes>
+	</test> Test -->
+	
+	<test name="Create a new PO">
+		<classes>
+			<class name="smokeTestCasesPO.TC07_NewPO" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

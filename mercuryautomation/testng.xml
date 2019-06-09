@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+    	<class name="testCases.TC01_Login"/>
+        <class name="testCases.TC02_estimate_without_customer"/>
+      	<class name="testCases.TC03_estimate_without_services"/>
+      	<class name="testCases.TC04_estimate_with_services"/>
+      	<class name="testCases.TC05_estimate_taxcalculation"/>
+      	<class name="testCases.TC06_estimate_with_wizardservices"/>
+      	<class name="testCases.TC07_estimate_with_swfservices"/>
+      	<class name="testCases.TC08_estimate_with_awfservices"/>
+      	<class name="testCases.TC09_estimate_contracttemplate"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

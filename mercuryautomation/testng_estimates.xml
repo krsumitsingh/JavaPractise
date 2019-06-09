@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mercury Test Suite">
+
+	<test name="Login Test">
+		<classes>
+			<class name="testCases.TC01_Login" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Create Estimate Without Customer Test">
+		<classes>
+			<class name="testCases.TC02_estimate_without_customer" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Create Estimate Without Services Test">
+		<classes>
+			<class name="testCases.TC03_estimate_without_services" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Create Estimate With Services Test">
+		<classes>
+			<class name="testCases.TC04_estimate_with_services" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Tax Calculation Test">
+		<classes>
+			<class name="testCases.TC05_estimate_taxcalculation" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Estimate With Wizard Services">
+		<classes>
+			<class name="testCases.TC06_estimate_with_wizardservices" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Estimate With SWF Services">
+		<classes>
+			<class name="testCases.TC07_estimate_with_swfservices" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Estimate With AWF Services">
+		<classes>
+			<class name="testCases.TC08_estimate_with_awfservices" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Estimate With Contract Template">
+		<classes>
+			<class name="testCases.TC09_estimate_contracttemplate" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Export To Order Test">
+		<classes>
+			<class name="testCases.TC10_estimate_exportorder" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Copy Estimate Test">
+		<classes>
+			<class name="testCases.TC11_estimate_copy" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Add Attachments Test">
+		<classes>
+			<class name="testCases.TC12_estimate_attachments" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Delete Estimate Test">
+		<classes>
+			<class name="testCases.TC13_estimate_DeleteEstimate" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Create Multiple Qty Test">
+		<classes>
+			<class name="testCases.TC14_estimate_multipleqty" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Test Suite-Orders]">
+  <test name="Login Test">
+    <classes>
+      <class name="smokeTestCasesOrders.TC01_Login"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test name="Order without customer">
+    <classes>
+      <class name="smokeTestCasesOrders.TC02_order_without_customer"/>
+    </classes>
+  </test> <!-- Order without customer -->
+  <test name="Order without services">
+    <classes>
+      <class name="smokeTestCasesOrders.TC03_order_without_services"/>
+    </classes>
+  </test> <!-- Order without services -->
+  <test name="Order with services">
+    <classes>
+      <class name="smokeTestCasesOrders.TC04_order_with_services"/>
+    </classes>
+  </test> <!-- Order with services -->
+  <test name="Tax Calculation">
+    <classes>
+      <class name="smokeTestCasesOrders.TC05_order_taxcalculation"/>
+    </classes>
+  </test> <!-- Tax Calculation -->
+  <test name="Add Wizard Services">
+    <classes>
+      <class name="smokeTestCasesOrders.TC06_order_with_wizardservices"/>
+    </classes>
+  </test> <!-- Add Wizard Services -->
+  <test name="Add Simple Wide Format Calculator">
+    <classes>
+      <class name="smokeTestCasesOrders.TC07_order_with_swfservices"/>
+    </classes>
+  </test> <!-- Add Simple Wide Format Calculator -->
+  <test name="Add Advance Wide Format Calculator">
+    <classes>
+      <class name="smokeTestCasesOrders.TC08_order_with_awfservices"/>
+    </classes>
+  </test> <!-- Add Advance Wide Format Calculator -->
+  <test name="Add Contract Template">
+    <classes>
+      <class name="smokeTestCasesOrders.TC09_order_contracttemplate"/>
+    </classes>
+  </test> <!-- Add Contract Template -->
+  <test name="Copy Order">
+    <classes>
+      <class name="smokeTestCasesOrders.TC10_order_copy"/>
+    </classes>
+  </test> <!-- Copy Order -->
+  <test name="Add Attachment">
+    <classes>
+      <class name="smokeTestCasesOrders.TC11_order_attachments"/>
+    </classes>
+  </test> <!-- Add Attachment -->
+  <test name="Delete Order">
+    <classes>
+      <class name="smokeTestCasesOrders.TC12_order_DeleteOrder"/>
+    </classes>
+  </test> <!-- Delete Order -->
+  <test name="Launch PC In Orders">
+    <classes>
+      <class name="smokeTestCasesOrders.TC13_order_printcalculator"/>
+    </classes>
+  </test> <!-- Launch PC In Orders -->
+  <test name="Version Copy ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC14_order_versioncopy"/>
+    </classes>
+  </test> <!-- Version Copy  -->
+  <test name="Version Edit ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC15_order_versionedit"/>
+    </classes>
+  </test> <!-- Version Edit  -->
+  <test name="Version Add ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC16_order_versionadd"/>
+    </classes>
+  </test> <!-- Version Add  -->
+  <test name="Version Delete ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC17_order_versiondelete"/>
+    </classes>
+  </test> <!-- Version Delete  -->
+  <test name="Estimate Export ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC18_order_estimateexport"/>
+    </classes>
+  </test> <!-- Estimate Export  -->
+  <test name="Single Drop ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC19_order_singledrop1"/>
+    </classes>
+  </test> <!-- Single Drop  -->
+  <test name="Single Drop-Version Tab ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC20_order_singledrop_versiontab"/>
+    </classes>
+  </test> <!-- Single Drop-Version Tab  -->
+  <test name="Multiple Drop-Single Version ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC21_order_multipledrop"/>
+    </classes>
+  </test> <!-- Multiple Drop-Single Version  -->
+  <test name="Multiple Drop Deletion ">
+    <classes>
+      <class name="smokeTestCasesOrders.TC22_order_deletedrop"/>
+    </classes>
+  </test> <!-- Multiple Drop Deletion  -->
+</suite> <!-- Failed suite [Mercury Test Suite-Orders] -->

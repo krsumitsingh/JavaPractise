@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mercury Test Suite-PO" duration-ms="82657" started-at="2019-04-08T10:52:13Z" finished-at="2019-04-08T10:53:36Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="11528" started-at="2019-04-08T10:52:13Z" finished-at="2019-04-08T10:52:25Z">
+      <class name="smokeTestCasesPO.TC01_Login">
+        <test-method status="PASS" signature="setup()[pri:0, instance:smokeTestCasesPO.TC01_Login@56ac3a89]" name="setup" is-config="true" duration-ms="5238" started-at="2019-04-08T16:22:13Z" finished-at="2019-04-08T16:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login_page()[pri:0, instance:smokeTestCasesPO.TC01_Login@56ac3a89]" name="login_page" duration-ms="6273" started-at="2019-04-08T16:22:19Z" finished-at="2019-04-08T16:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page -->
+      </class> <!-- smokeTestCasesPO.TC01_Login -->
+    </test> <!-- Login Test -->
+    <test name="PO Search Screen" duration-ms="8047" started-at="2019-04-08T10:52:25Z" finished-at="2019-04-08T10:52:33Z">
+      <class name="smokeTestCasesPO.TC02_POSearch">
+        <test-method status="PASS" signature="POSearchScreen()[pri:0, instance:smokeTestCasesPO.TC02_POSearch@dc24521]" name="POSearchScreen" duration-ms="8046" started-at="2019-04-08T16:22:25Z" finished-at="2019-04-08T16:22:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POSearchScreen -->
+      </class> <!-- smokeTestCasesPO.TC02_POSearch -->
+    </test> <!-- PO Search Screen -->
+    <test name="Create a new PO" duration-ms="63066" started-at="2019-04-08T10:52:33Z" finished-at="2019-04-08T10:53:36Z">
+      <class name="smokeTestCasesPO.TC07_NewPO">
+        <test-method status="PASS" signature="NewPO()[pri:0, instance:smokeTestCasesPO.TC07_NewPO@3c0f93f1]" name="NewPO" duration-ms="63065" started-at="2019-04-08T16:22:33Z" finished-at="2019-04-08T16:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewPO -->
+      </class> <!-- smokeTestCasesPO.TC07_NewPO -->
+    </test> <!-- Create a new PO -->
+  </suite> <!-- Mercury Test Suite-PO -->
+</testng-results>

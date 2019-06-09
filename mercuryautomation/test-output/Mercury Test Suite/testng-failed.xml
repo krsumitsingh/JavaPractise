@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Test Suite]">
+  <test name="Login Test">
+    <classes>
+      <class name="testCasesEstimates.TC01_Login"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test name="Create Estimate Without Customer Test">
+    <classes>
+      <class name="testCasesEstimates.TC02_estimate_without_customer"/>
+    </classes>
+  </test> <!-- Create Estimate Without Customer Test -->
+  <test name="Create Estimate Without Services Test">
+    <classes>
+      <class name="testCasesEstimates.TC03_estimate_without_services"/>
+    </classes>
+  </test> <!-- Create Estimate Without Services Test -->
+  <test name="Create Estimate With Services Test">
+    <classes>
+      <class name="testCasesEstimates.TC04_estimate_with_services"/>
+    </classes>
+  </test> <!-- Create Estimate With Services Test -->
+  <test name="Tax Calculation Test">
+    <classes>
+      <class name="testCasesEstimates.TC05_estimate_taxcalculation"/>
+    </classes>
+  </test> <!-- Tax Calculation Test -->
+  <test name="Estimate With Wizard Services">
+    <classes>
+      <class name="testCasesEstimates.TC06_estimate_with_wizardservices"/>
+    </classes>
+  </test> <!-- Estimate With Wizard Services -->
+  <test name="Estimate With SWF Services">
+    <classes>
+      <class name="testCasesEstimates.TC07_estimate_with_swfservices"/>
+    </classes>
+  </test> <!-- Estimate With SWF Services -->
+  <test name="Estimate With AWF Services">
+    <classes>
+      <class name="testCasesEstimates.TC08_estimate_with_awfservices"/>
+    </classes>
+  </test> <!-- Estimate With AWF Services -->
+  <test name="Estimate With Contract Template">
+    <classes>
+      <class name="testCasesEstimates.TC09_estimate_contracttemplate"/>
+    </classes>
+  </test> <!-- Estimate With Contract Template -->
+  <test name="Export To Order Test">
+    <classes>
+      <class name="testCasesEstimates.TC10_estimate_exportorder"/>
+    </classes>
+  </test> <!-- Export To Order Test -->
+  <test name="Copy Estimate Test">
+    <classes>
+      <class name="testCasesEstimates.TC11_estimate_copy"/>
+    </classes>
+  </test> <!-- Copy Estimate Test -->
+  <test name="Add Attachments Test">
+    <classes>
+      <class name="testCasesEstimates.TC12_estimate_attachments"/>
+    </classes>
+  </test> <!-- Add Attachments Test -->
+  <test name="Delete Estimate Test">
+    <classes>
+      <class name="testCasesEstimates.TC13_estimate_DeleteEstimate"/>
+    </classes>
+  </test> <!-- Delete Estimate Test -->
+  <test name="Create Multiple Qty Test">
+    <classes>
+      <class name="testCasesEstimates.TC14_estimate_multipleqty"/>
+    </classes>
+  </test> <!-- Create Multiple Qty Test -->
+  <test name="Print Calculator Test">
+    <classes>
+      <class name="testCasesEstimates.TC15_estimate_printcalculator"/>
+    </classes>
+  </test> <!-- Print Calculator Test -->
+  <test name="Export To Order Test(failed)">
+    <classes>
+      <class name="testCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC01_Login -->
+      <class name="testCasesEstimates.TC10_estimate_exportorder">
+        <methods>
+          <include name="OrderExport"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC10_estimate_exportorder -->
+    </classes>
+  </test> <!-- Export To Order Test(failed) -->
+  <test name="Copy Estimate Test(failed)">
+    <classes>
+      <class name="testCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC01_Login -->
+      <class name="testCasesEstimates.TC11_estimate_copy">
+        <methods>
+          <include name="estimateCopy"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC11_estimate_copy -->
+    </classes>
+  </test> <!-- Copy Estimate Test(failed) -->
+  <test name="Add Attachments Test(failed)">
+    <classes>
+      <class name="testCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC01_Login -->
+      <class name="testCasesEstimates.TC12_estimate_attachments">
+        <methods>
+          <include name="attachments"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC12_estimate_attachments -->
+    </classes>
+  </test> <!-- Add Attachments Test(failed) -->
+  <test name="Create Multiple Qty Test(failed)">
+    <classes>
+      <class name="testCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC01_Login -->
+      <class name="testCasesEstimates.TC14_estimate_multipleqty">
+        <methods>
+          <include name="MQ"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC14_estimate_multipleqty -->
+    </classes>
+  </test> <!-- Create Multiple Qty Test(failed) -->
+  <test name="Print Calculator Test(failed)">
+    <classes>
+      <class name="testCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC01_Login -->
+      <class name="testCasesEstimates.TC15_estimate_printcalculator">
+        <methods>
+          <include name="printCalculator"/>
+        </methods>
+      </class> <!-- testCasesEstimates.TC15_estimate_printcalculator -->
+    </classes>
+  </test> <!-- Print Calculator Test(failed) -->
+</suite> <!-- Failed suite [Mercury Test Suite] -->
