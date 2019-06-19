@@ -44,11 +44,11 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<test name="Estimate With AWF Services">
+<!-- 	<test name="Estimate With AWF Services">
 		<classes>
 			<class name="smokeTestCasesEstimates.TC08_estimate_with_awfservices" />
 		</classes>
-	</test> <!-- Test -->
+	</test> Test -->
 
 	<test name="Estimate With Contract Template">
 		<classes>

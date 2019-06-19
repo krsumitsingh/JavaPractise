@@ -110,11 +110,11 @@ public class EstimateTaxesCalculations extends TestBase {
 	By estimatenumber = By
 			.xpath("//tr[@id='ctl00_mainContentPlaceHolder_estimateSearchGridView_DXDataRow0']/td[1]/a");
 	By dataTab = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_PnlForMiscellaneousActions_estimateSubMenu_DXI4_T']/label");
+			.xpath("//*[@class='dxmMenuItem']//*[text()='Data']");
 	By servicesTextField = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell0_1_serviceCodeEditComboBox_I']");
+			.xpath(".//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell0_1_pnlGridViewServices_serviceCodeEditComboBox_I']");
 	By servicesTextField1 = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell1_1_serviceCodeEditComboBox_I']");
+			.xpath("//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell1_1_pnlGridViewServices_serviceCodeEditComboBox_I']");
 	By ExtPriceTotal = By
 			.xpath("*//label[@id='ctl00_mainContentPlaceHolder_priceTotalTextBoxLabel']");
 	By TotalAndTax = By
@@ -126,7 +126,7 @@ public class EstimateTaxesCalculations extends TestBase {
 	By serviceInfoPage = By.cssSelector("#ctl00_iframeCommonPopup");
 	By servicePageLabel = By.xpath("//label[@id='serviceHeaderLabel']");
 	By wizardService = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell0_1_serviceCodeEditComboBox_I']");
+			.xpath(".//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell0_1_pnlGridViewServices_serviceCodeEditComboBox_I']");
 	By wizardScreen = By
 			.cssSelector("#ctl00_mainContentPlaceHolder_iframeServiceWizard");
 	By wizardDescLabel = By
@@ -143,12 +143,10 @@ public class EstimateTaxesCalculations extends TestBase {
 			.xpath("//*[@id='ctl00_mainContentPlaceHolder_copyButton']//span");
 	By taxAmount = By.xpath("//*[@id='taxGridView_tccell0_2']/label");
 	By taxJuris = By.xpath("//*[@class='dxeBase taxableCheckBox']");
-	// By mailingTab =
-	// By.xpath("//*[@class='dxmMenuItem dxmMenuItemSelected dxh1']//*[text()='Mailing']");
 	By mailingTab = By
-			.xpath(".//*[@id='ctl00_mainContentPlaceHolder_PnlForMiscellaneousActions_estimateSubMenu_DXI8_T']/label");
+			.xpath("//*[@class='dxmMenuItem']//*[text()='Mailing']");
 	By printTab = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_PnlForMiscellaneousActions_estimateSubMenu_DXI6_T']/label");
+			.xpath("//*[@class='dxmMenuItem']//*[text()='Print']");
 	By taxJurisdiction = By.xpath("//*[@class='dxeBase taxableCheckBox']");
 	By taxTotal_ServiceInfoPage = By.xpath(".//*[@id='taxTotalTextBoxLabel']");
 	By taxJursidictionArea = By
@@ -241,8 +239,7 @@ public class EstimateTaxesCalculations extends TestBase {
 			driver.findElement(expectedQty)
 			.sendKeys(repo.getProperty("expqty"));
 			logger.info("Expected Qty Entered is: " + text_name);
-			// driver.findElement(saveclose).click();
-			// logger.info("Save and Close Button on the estimate page clicked");
+			
 			waitFor(5);
 			// This will select Data department and click on it
 			dataDept = driver.findElement(dataTab).getText();
@@ -452,8 +449,7 @@ public class EstimateTaxesCalculations extends TestBase {
 				.sendKeys(Keys.SPACE);
 		// unCheck_TaxJurisdiction();//This method will uncheck the tax
 		// jurisdiction checkbox
-		// waitFor(8000);
-		// driver.findElement(saveBtn).click();
+		
 		waitFor(5);
 		mailingDeptTab = driver.findElement(mailingTab).getText();
 		logger.info("Selecting.." + mailingDeptTab + " "
@@ -697,20 +693,14 @@ public class EstimateTaxesCalculations extends TestBase {
 				.findElement(By.xpath("*//label[@id='subTotalTextBoxLabel']"))
 				.getText().replace("$", "");
 		ExtPrice4 = Double.parseDouble(ExtPrice_TC04);
-		/*
-		 * ExtPrice4 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(ExtPrice_TC04));
-		 */
+		
 		logger.info("Ext. Price on Detail popup :" + ExtPrice4);
 		TaxPercentage04 = driver
 				.findElement(
 						By.xpath("*//label[@id='taxGridView_cell0_1_taxPercentLabel']"))
 						.getText().replace("%", "");
 		TaxPercentagenew_04 = Double.parseDouble(TaxPercentage04);
-		/*
-		 * TaxPercentagenew_04 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(TaxPercentage04));
-		 */
+		
 		logger.info("Tax % on first row Detail popup :" + TaxPercentagenew_04);
 		taxTotal_ServiceInfoPage04 = driver
 				.findElement(taxTotal_ServiceInfoPage).getText()
@@ -738,10 +728,7 @@ public class EstimateTaxesCalculations extends TestBase {
 		TotalAndTax04 = driver.findElement(TotalAndTax).getText()
 				.replace("$", "");
 		TotalandTax_04 = Double.parseDouble(TotalAndTax04);
-		/*
-		 * TotalandTax_04 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(TotalAndTax04));
-		 */
+		
 		logger.info("Total and Tax amount at the order header level :"
 				+ TotalandTax_04);
 
@@ -799,30 +786,21 @@ public class EstimateTaxesCalculations extends TestBase {
 				.findElement(By.xpath("*//label[@id='subTotalTextBoxLabel']"))
 				.getText().replace("$", "");
 		ExtPrice7 = Double.parseDouble(ExtPrice_TC07);
-		/*
-		 * ExtPrice4 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(ExtPrice_TC04));
-		 */
+		
 		logger.info("Ext. Price on Detail popup :" + ExtPrice7);
 		TaxPercentage07 = driver
 				.findElement(
 						By.xpath("*//label[@id='taxGridView_cell0_1_taxPercentLabel']"))
 						.getText().replace("%", "");
 		TaxPercentagenew_07 = Double.parseDouble(TaxPercentage07);
-		/*
-		 * TaxPercentagenew_04 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(TaxPercentage04));
-		 */
+		
 		logger.info("Tax % on first row Detail popup :" + TaxPercentagenew_07);
 		taxTotal_ServiceInfoPage07 = driver
 				.findElement(taxTotal_ServiceInfoPage).getText()
 				.replace("$", "");
 		taxTotal_ServiceInfoPage_07 = Double
 				.parseDouble(taxTotal_ServiceInfoPage07);
-		/*
-		 * taxTotal_ServiceInfoPage_04 = Double.parseDouble(new DecimalFormat(
-		 * "0.00").format(taxTotal_ServiceInfoPage04));
-		 */
+		
 		logger.info("Tax Total Amount in the Detail popup :"
 				+ taxTotal_ServiceInfoPage_07);
 		LineItemTotal07 = ExtPrice7 + taxTotal_ServiceInfoPage_07;
@@ -837,24 +815,11 @@ public class EstimateTaxesCalculations extends TestBase {
 		waitFor(8);
 
 		taxAndServiceTotal = LineItemTotal07 + LineItemTotal04;
-		/*
-		 * taxAndServiceTotal=Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(taxAndServiceTotal));
-		 */
+		
 		logger.info("Total and Tax amount of all the services is $"
 				+ taxAndServiceTotal);
 
-		// Total and Tax amount at the order header level
-
-		/*
-		 * TotalAndTax07 = driver.findElement(TotalAndTax).getText()
-		 * .replace("$", ""); TotalandTax_07 =
-		 * Double.parseDouble(TotalAndTax07); TotalandTax_04 =
-		 * Double.parseDouble(new DecimalFormat("0.00") .format(TotalAndTax04));
-		 * logger.info("Total and Tax amount at the order header level :" +
-		 * TotalandTax_07); if (taxAndServiceTotal.equals(TotalandTax_07)){
-		 */
-
+	
 		if (taxAndServiceTotal.equals(Double.parseDouble(repo
 				.getProperty("TotalOfSvcsAndTax_TC07")))) {
 
@@ -922,7 +887,7 @@ public class EstimateTaxesCalculations extends TestBase {
 		waitFor(3);
 		driver.findElement(taxJursidictionArea).sendKeys(Keys.TAB);
 		logger.info("Tax Jursidiction selected is: " + taxJursidictionTxt);
-		// driver.findElement(taxJursidictionArea).sendKeys(Keys.TAB);
+		
 		waitFor(8);
 
 		// ********This will click on details link of the first line item and
@@ -1088,8 +1053,7 @@ public class EstimateTaxesCalculations extends TestBase {
 			driver.findElement(expectedQty).sendKeys(
 					repo.getProperty("expqty_TC09"));
 			logger.info("Expected Qty Entered is: " + text_name);
-			// driver.findElement(saveclose).click();
-			// logger.info("Save and Close Button on the estimate page clicked");
+			
 			waitFor(5);
 			// This will select Data department and click on it
 			String printDept = driver.findElement(printTab).getText();
@@ -1119,13 +1083,7 @@ public class EstimateTaxesCalculations extends TestBase {
 		waitFor(8);
 		text_name = repo.getProperty("wizardservice_TC09");
 		logger.info("Wizard Type Service Added is: " + text_name);
-		// driver.findElement(saveBtn).click();
-		// waitFor(8);
-		// logger.info("Save Button is clicked on the estimate page" +
-		// estimate_Id);
-
-		// ********This will click on details link and open service information
-		// page********
+		
 		driver.findElement(detailLinks).click();
 		detailLinkText = driver.findElement(detailLinks).getText();
 		logger.info("The " + detailLinkText.toString() + " link is clicked");
@@ -1140,35 +1098,15 @@ public class EstimateTaxesCalculations extends TestBase {
 				.findElement(By.xpath("*//label[@id='subTotalTextBoxLabel']"))
 				.getText().replace("$", "").replace(",", "");
 		Double ExtPrice09 = Double.parseDouble(ExtPrice_TC09);
-		/*
-		 * ExtPrice4 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(ExtPrice_TC04));
-		 */
+		
 		logger.info("Ext. Price on Service Info Page popup is $" + ExtPrice09);
 		String TaxTotal_09 = driver.findElement(taxTotal_ServiceInfoPage)
 				.getText().replace("$", "").replace(",", "");
 		;
 		Double TaxTotal09 = Double.parseDouble(TaxTotal_09);
-		/*
-		 * TaxPercentagenew_04 = Double.parseDouble(new DecimalFormat("0.00")
-		 * .format(TaxPercentage04));
-		 */
+		
 		logger.info("Tax Total On The Service Info Page is $" + TaxTotal09);
-		/*
-		 * taxTotal_ServiceInfoPage04 = driver
-		 * .findElement(taxTotal_ServiceInfoPage).getText() .replace("$", "");
-		 */
-
-		// taxTotal_ServiceInfoPage_04 =
-		// Double.parseDouble(taxTotal_ServiceInfoPage04);
-		/*
-		 * taxTotal_ServiceInfoPage_04 = Double.parseDouble(new DecimalFormat(
-		 * "0.00").format(taxTotal_ServiceInfoPage04));
-		 */
-		/*
-		 * logger.info("Tax Total Amount in the Detail popup :" +
-		 * taxTotal_ServiceInfoPage_04);
-		 */
+		
 
 		Double LineItemTotal09 = ExtPrice09 + TaxTotal09;
 		logger.info("Extended Price And Tax Total In Detail popup is $:"

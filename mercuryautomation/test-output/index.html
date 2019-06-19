@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Mercury_Test_Suite-PO">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Mercury_Test_Suite-PO" title="smokeTestCasesPO.TC07_NewPO" hash-for-method="NewPO">NewPO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mercury_Test_Suite-PO" title="smokeTestCasesPO.TC08_ItemsOrdered" hash-for-method="NewPO">NewPO</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,7 +135,7 @@
           <div class="suite-Mercury_Test_Suite-PO-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">smokeTestCasesPO.TC07_NewPO</span>
+              <span class="class-name">smokeTestCasesPO.TC08_ItemsOrdered</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -153,6 +158,21 @@
                   <a name="POSearchScreen">
                   </a> <!-- POSearchScreen -->
                   <span class="method-name">POSearchScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mercury_Test_Suite-PO-class-passed -->
+          <div class="suite-Mercury_Test_Suite-PO-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">smokeTestCasesPO.TC07_NewPO</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewPO">
+                  </a> <!-- NewPO -->
+                  <span class="method-name">NewPO</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,6 +217,11 @@
       &lt;class name=&quot;smokeTestCasesPO.TC07_NewPO&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Create a new PO --&gt;
+  &lt;test name=&quot;Add a new item ordered data in the grid&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;smokeTestCasesPO.TC08_ItemsOrdered&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add a new item ordered data in the grid --&gt;
 &lt;/suite&gt; &lt;!-- Mercury Test Suite-PO --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,6 +240,9 @@
               </li>
               <li>
                 <span class="test-name">Create a new PO (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add a new item ordered data in the grid (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,24 +268,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'NewPO')
 data.setCell(0, 2, 'smokeTestCasesPO.TC07_NewPO')
-data.setCell(0, 3, 63065);
+data.setCell(0, 3, 110202);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'POSearchScreen')
-data.setCell(1, 2, 'smokeTestCasesPO.TC02_POSearch')
-data.setCell(1, 3, 8046);
+data.setCell(1, 1, 'NewPO')
+data.setCell(1, 2, 'smokeTestCasesPO.TC08_ItemsOrdered')
+data.setCell(1, 3, 55261);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'login_page')
 data.setCell(2, 2, 'smokeTestCasesPO.TC01_Login')
-data.setCell(2, 3, 6273);
+data.setCell(2, 3, 13713);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'POSearchScreen')
+data.setCell(3, 2, 'smokeTestCasesPO.TC02_POSearch')
+data.setCell(3, 3, 8998);
 window.suiteTableData['Mercury_Test_Suite-PO']= { tableData: data, tableDiv: 'times-div-Mercury_Test_Suite-PO'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Mercury_Test_Suite-PO">
               </div> <!-- times-div-Mercury_Test_Suite-PO -->
             </div> <!-- times-div -->
@@ -290,21 +322,28 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login_page</span>
-                <span class="method-start">5242 ms</span>
+                <span class="method-start">9007 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">smokeTestCasesPO.TC02_POSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">POSearchScreen</span>
-                <span class="method-start">11535 ms</span>
+                <span class="method-start">22796 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">smokeTestCasesPO.TC07_NewPO</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NewPO</span>
-                <span class="method-start">19581 ms</span>
+                <span class="method-start">31803 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">smokeTestCasesPO.TC08_ItemsOrdered</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NewPO</span>
+                <span class="method-start">142014 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

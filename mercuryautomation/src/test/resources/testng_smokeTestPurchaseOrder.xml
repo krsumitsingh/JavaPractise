@@ -18,21 +18,21 @@
 		<classes>
 			<class name="smokeTestCasesPO.TC03_POOpen" />
 		</classes>
-	</test> Test -->
+	</test> Test
 
-	<!-- <test name="Copy PO">
+	<test name="Copy PO">
 		<classes>
 			<class name="smokeTestCasesPO.TC04_POCopy" />
 		</classes>
-	</test> Test -->
+	</test> Test
 
-	<!-- <test name="Delete PO">
+	<test name="Delete PO">
 		<classes>
 			<class name="smokeTestCasesPO.TC05_PODelete" />
 		</classes>
-	</test> Test -->
+	</test> Test
 
-	<!-- <test name="Create a new PO and cancel it">
+	<test name="Create a new PO and cancel it">
 		<classes>
 			<class name="smokeTestCasesPO.TC06_NewPOCancel" />
 		</classes>
@@ -41,6 +41,12 @@
 	<test name="Create a new PO">
 		<classes>
 			<class name="smokeTestCasesPO.TC07_NewPO" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Add a new item ordered data in the grid">
+		<classes>
+			<class name="smokeTestCasesPO.TC08_ItemsOrdered" />
 		</classes>
 	</test> <!-- Test -->
 

@@ -3,16 +3,25 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="smokeTestCasesPO.TC01_POSearch"/>
+      <class name="smokeTestCasesEstimatesTaxCalculations.estimate_misctaxescalculations"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="smokeTestCasesPO.TC01_POSearch">
+      <class name="smokeTestCasesEstimatesTaxCalculations.estimate_misctaxescalculations">
         <methods>
-          <include name="POSearchScreen"/>
+          <include name="estimate_taxes"/>
+          <include name="estimate_NoAction"/>
+          <include name="estimate_TC07"/>
+          <include name="estimate_taxes_wizard"/>
+          <include name="estimate_TC06"/>
+          <include name="estimate_TC09"/>
+          <include name="estimate_TC08"/>
+          <include name="estimate_TC05"/>
+          <include name="estimate_TC04"/>
+          <include name="estimate_TC10"/>
         </methods>
-      </class> <!-- smokeTestCasesPO.TC01_POSearch -->
+      </class> <!-- smokeTestCasesEstimatesTaxCalculations.estimate_misctaxescalculations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

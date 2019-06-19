@@ -16,4 +16,9 @@
       <class name="smokeTestCasesPO.TC07_NewPO"/>
     </classes>
   </test> <!-- Create a new PO -->
+  <test name="Add a new item ordered data in the grid">
+    <classes>
+      <class name="smokeTestCasesPO.TC08_ItemsOrdered"/>
+    </classes>
+  </test> <!-- Add a new item ordered data in the grid -->
 </suite> <!-- Failed suite [Mercury Test Suite-PO] -->

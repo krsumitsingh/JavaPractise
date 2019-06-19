@@ -111,4 +111,102 @@
       <class name="smokeTestCasesOrders.TC22_order_deletedrop"/>
     </classes>
   </test> <!-- Multiple Drop Deletion  -->
+  <test name="Tax Calculation(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC05_order_taxcalculation">
+        <methods>
+          <include name="orderwithservice"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC05_order_taxcalculation -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Tax Calculation(failed) -->
+  <test name="Add Wizard Services(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC06_order_with_wizardservices">
+        <methods>
+          <include name="addWizardService"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC06_order_with_wizardservices -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Add Wizard Services(failed) -->
+  <test name="Add Simple Wide Format Calculator(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC07_order_with_swfservices">
+        <methods>
+          <include name="addswf"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC07_order_with_swfservices -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Add Simple Wide Format Calculator(failed) -->
+  <test name="Add Advance Wide Format Calculator(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC08_order_with_awfservices">
+        <methods>
+          <include name="addawf"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC08_order_with_awfservices -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Add Advance Wide Format Calculator(failed) -->
+  <test name="Add Contract Template(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC09_order_contracttemplate">
+        <methods>
+          <include name="addcontractTemplate"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC09_order_contracttemplate -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Add Contract Template(failed) -->
+  <test name="Copy Order(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC10_order_copy">
+        <methods>
+          <include name="orderCopy"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC10_order_copy -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Copy Order(failed) -->
+  <test name="Launch PC In Orders(failed)">
+    <classes>
+      <class name="smokeTestCasesOrders.TC13_order_printcalculator">
+        <methods>
+          <include name="printCalculator"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC13_order_printcalculator -->
+      <class name="smokeTestCasesOrders.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesOrders.TC01_Login -->
+    </classes>
+  </test> <!-- Launch PC In Orders(failed) -->
 </suite> <!-- Failed suite [Mercury Test Suite-Orders] -->

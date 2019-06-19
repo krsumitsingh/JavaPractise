@@ -97,7 +97,7 @@ public class EstimatesPage extends TestBase {
 	By estimatenumber = By
 			.xpath("//tr[@id='ctl00_mainContentPlaceHolder_estimateSearchGridView_DXDataRow0']/td[1]/a");
 	By dataTab = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_PnlForMiscellaneousActions_estimateSubMenu_DXI4_T']/label");
+			.xpath("//*[@class='dxmMenuItem']//*[text()='Data']");
 	By servicesTextField = By
 			.xpath("//*[@id='ctl00_mainContentPlaceHolder_ASPxCallbackPanelServiceGrid_serviceGridView_cell0_1_pnlGridViewServices_serviceCodeEditComboBox_I']");
 	By ExtPriceTotal = By
@@ -115,7 +115,7 @@ public class EstimatesPage extends TestBase {
 	By wizardDescLabel = By
 			.xpath("//label[@id='serviceWizardDescriptionTextLabel']");
 	By wideFormatDept = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_PnlForMiscellaneousActions_estimateSubMenu_DXI10_T']");
+			.xpath("//*[@class='dxmMenuItem']//*[text()='Wide Format']");
 	By genericCalc = By
 			.cssSelector("#ctl00_mainContentPlaceHolder_iframeWideFormat");
 	By wideFormatServiceField = By
@@ -128,7 +128,7 @@ public class EstimatesPage extends TestBase {
 	By projectName_ContractTemplate = By
 			.xpath("//*[@id='projectSearchGridView_cell1_0_ProjectCheckBox_I']");
 	By fullFillmentDept = By
-			.xpath("//*[@id='ctl00_mainContentPlaceHolder_PnlForMiscellaneousActions_estimateSubMenu_DXI9_T']/label");
+			.xpath("//*[@class='dxmMenuItem']//*[text()='Fulfillment']");
 	By exportOrderBtn = By
 			.xpath("//*[@id='ctl00_mainContentPlaceHolder_HeaderASPxCallbackPanel_EstToOrderButton_CD']/span");
 	By orderexported = By
@@ -453,11 +453,10 @@ public class EstimatesPage extends TestBase {
 				By.xpath("//td[@id='serviceWizardGridView_cell0_0_wizardTextButton_B']//span"))
 				.click();
 		logger.info("Selecting the wizard type successor from the wizard page");
+		logger.info("Wizard Type Service Added: "+repo.getProperty("wizservicename"));
 		driver.switchTo().defaultContent();
 		waitFor(8);
-		/*logger.info("Wizard Type Service Added");
-		driver.findElement(saveBtn).click();
-		logger.info("Save Button is clicked on the estimate page# to save it");*/
+		
 	}
 
 	/*
@@ -503,54 +502,74 @@ public class EstimatesPage extends TestBase {
 		logger.info("Submit button clicked");
 		driver.switchTo().defaultContent();
 		waitFor(5);
+		
+		driver.findElement(saveclose).click();
+
+		waitFor(3);
 		logger.info("Simple Wide format calculator successfully added");
-		/*driver.findElement(saveBtn).click();
-		logger.info("User clicked on the save button of the Estimate Page#:");
-		waitFor(5);*/
+		logger.info("Save and Close Button on the estimate page clicked");
+		waitFor(5);
+		wait.until(ExpectedConditions.presenceOfElementLocated(estimateSearch));
+		text_name = driver.findElement(estimateSearch).getText();
+
+		logger.info("User is on the.." + text_name.toString());
+		waitFor(3);
+		text_name = driver.findElement(estimatenumber).getText();
+
+		logger.info("New estimate Id.." + text_name.toString());
+		
 	}
 
 	/*
 	 * This method will add advance wide format calc type service into wide
 	 * format dept
 	 */
-	public void awf() throws Exception {
+	/*public void awf() throws Exception {
 		// waitFor(5);
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		/*wideFormatText = driver.findElement(wideFormatDept).getText();
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wideFormatText = driver.findElement(wideFormatDept).getText();
 		driver.findElement(wideFormatDept).click();
 		logger.info("Selecting.." + wideFormatText + " "
 				+ "Department and entering line item to it");
-		waitFor(5);*/
+		waitFor(5);
 		
-		/* ********This will add simple wide format service to wide format */
+		 ********This will add simple wide format service to wide format 
 		driver.findElement(awfServiceField).click();
 		waitFor(8);
 		driver.findElement(awfServiceField).sendKeys(
 				repo.getProperty("awflaunchserv"));
 		driver.findElement(awfServiceField).sendKeys(Keys.TAB);
 		waitFor(8);
-		/*
+		
 		 * ********Launch Advance Wide Format calculator/adding product to it
 		 * and click on Save
-		 */
+		 
 		wait.until(ExpectedConditions
 				.frameToBeAvailableAndSwitchToIt(genericCalc));
 		calcLabel = driver.findElement(By.xpath("//label[@id='ASPxLabel72']"))
 				.getText();
 		logger.info("The " + calcLabel.toString() + " page opened");
-		driver.findElement(By.id("wfEstimateProductTypeDropDownList"))
-				.sendKeys("3'x5' Banner");
-		logger.info("Selecting 3'x5' Banner Product type in the calculator");
+		driver.findElement(By.xpath(".//*[@id='MainPrintPnl_ddlProductType_I']")).sendKeys(Keys.CONTROL + "a");
+		//driver.findElement(By.xpath(".//*[@id='MainPrintPnl_ddlProductType_I']")).click();
 		waitFor(3);
-		driver.findElement(By.id("wfMessageEditor"))
-				.sendKeys(
+		driver.findElement(By.xpath(".//*[@id='MainPrintPnl_ddlProductType_I']")).sendKeys("Daves Banner Job");
+		logger.info("Daves Banner Job Product type in the calculator");
+		//waitFor(8);
+		driver.findElement(By.xpath(".//*[@id='divLinkNotes']")).click();
+		driver.findElement(By.xpath(".//*[@id='MainPrintPnl_txtNote_I']")).click();
+		driver.findElement(By.xpath(".//*[@id='MainPrintPnl_txtNote_I']")).sendKeys(
 						"****Automation Script-Adding comments for advance wide format****");
-		driver.findElement(By.xpath("//*[@id='wfItemProcessButton']//span"))
+		waitFor(3);
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='MainPrintPnl_btnCalculate_CD']/span")));
+		driver.findElement(By.xpath(".//*[@id='MainPrintPnl_btnCalculate_CD']/span"))
 				.click();
-		logger.info("Save button clicked:");
-		driver.findElement(By.xpath("//*[@id='wfItemSubmitButton']//span"))
+		logger.info("Calculate button clicked:");
+		waitFor(5);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='MainPrintPnl_btnSubmit_CD']/span")));
+		driver.findElement(By.xpath(".//*[@id='MainPrintPnl_btnSubmit_CD']/span"))
 				.click();
-		logger.info("Submit button clicked");
+		logger.info("Save and Close button clicked");
 		driver.switchTo().defaultContent();
 		waitFor(5);
 		logger.info("Advance Wide format calculator successfully added");
@@ -568,7 +587,7 @@ public class EstimatesPage extends TestBase {
 		text_name = driver.findElement(estimatenumber).getText();
 
 		logger.info("New estimate Id.." + text_name.toString());
-		/*estnum = "# " + text_name;
+		estnum = "# " + text_name;
 		try {
 			if (estnum.matches(estimate_Id)) {
 				logger.info("The New Estimate#--" + estnum
@@ -576,8 +595,10 @@ public class EstimatesPage extends TestBase {
 			}
 		} catch (Exception e) {
 			logger.info("The Estimate# was not created");
-		}*/
-	}
+		}
+	}*/
+	
+	
 
 	/* This method will test the contract template */
 	public void contractTemplate() throws Exception {

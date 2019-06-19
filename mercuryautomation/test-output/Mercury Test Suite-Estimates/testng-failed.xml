@@ -36,11 +36,6 @@
       <class name="smokeTestCasesEstimates.TC07_estimate_with_swfservices"/>
     </classes>
   </test> <!-- Estimate With SWF Services -->
-  <test name="Estimate With AWF Services">
-    <classes>
-      <class name="smokeTestCasesEstimates.TC08_estimate_with_awfservices"/>
-    </classes>
-  </test> <!-- Estimate With AWF Services -->
   <test name="Estimate With Contract Template">
     <classes>
       <class name="smokeTestCasesEstimates.TC09_estimate_contracttemplate"/>
@@ -76,4 +71,46 @@
       <class name="smokeTestCasesEstimates.TC15_estimate_printcalculator"/>
     </classes>
   </test> <!-- Print Calculator Test -->
+  <test name="Add Attachments Test(failed)">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC12_estimate_attachments">
+        <methods>
+          <include name="attachments"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimates.TC12_estimate_attachments -->
+      <class name="smokeTestCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimates.TC01_Login -->
+    </classes>
+  </test> <!-- Add Attachments Test(failed) -->
+  <test name="Create Multiple Qty Test(failed)">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC14_estimate_multipleqty">
+        <methods>
+          <include name="MQ"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimates.TC14_estimate_multipleqty -->
+      <class name="smokeTestCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimates.TC01_Login -->
+    </classes>
+  </test> <!-- Create Multiple Qty Test(failed) -->
+  <test name="Print Calculator Test(failed)">
+    <classes>
+      <class name="smokeTestCasesEstimates.TC15_estimate_printcalculator">
+        <methods>
+          <include name="printCalculator"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimates.TC15_estimate_printcalculator -->
+      <class name="smokeTestCasesEstimates.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimates.TC01_Login -->
+    </classes>
+  </test> <!-- Print Calculator Test(failed) -->
 </suite> <!-- Failed suite [Mercury Test Suite-Estimates] -->

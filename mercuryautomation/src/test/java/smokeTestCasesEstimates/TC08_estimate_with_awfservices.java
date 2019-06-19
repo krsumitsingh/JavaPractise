@@ -1,4 +1,4 @@
-package smokeTestCasesEstimates;
+/*package smokeTestCasesEstimates;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
@@ -20,3 +20,4 @@ public class TC08_estimate_with_awfservices extends TestBase{
 	}
 
 }
+*/

@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Mercury Test Suite-PO" duration-ms="82657" started-at="2019-04-08T10:52:13Z" finished-at="2019-04-08T10:53:36Z">
+  <suite name="Mercury Test Suite-PO" duration-ms="197287" started-at="2019-06-18T11:09:55Z" finished-at="2019-06-18T11:13:12Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="11528" started-at="2019-04-08T10:52:13Z" finished-at="2019-04-08T10:52:25Z">
+    <test name="Login Test" duration-ms="22734" started-at="2019-06-18T11:09:55Z" finished-at="2019-06-18T11:10:18Z">
       <class name="smokeTestCasesPO.TC01_Login">
-        <test-method status="PASS" signature="setup()[pri:0, instance:smokeTestCasesPO.TC01_Login@56ac3a89]" name="setup" is-config="true" duration-ms="5238" started-at="2019-04-08T16:22:13Z" finished-at="2019-04-08T16:22:19Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:smokeTestCasesPO.TC01_Login@3f49dace]" name="setup" is-config="true" duration-ms="8988" started-at="2019-06-18T16:39:55Z" finished-at="2019-06-18T16:40:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login_page()[pri:0, instance:smokeTestCasesPO.TC01_Login@56ac3a89]" name="login_page" duration-ms="6273" started-at="2019-04-08T16:22:19Z" finished-at="2019-04-08T16:22:25Z">
+        <test-method status="PASS" signature="login_page()[pri:0, instance:smokeTestCasesPO.TC01_Login@3f49dace]" name="login_page" duration-ms="13713" started-at="2019-06-18T16:40:04Z" finished-at="2019-06-18T16:40:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_page -->
       </class> <!-- smokeTestCasesPO.TC01_Login -->
     </test> <!-- Login Test -->
-    <test name="PO Search Screen" duration-ms="8047" started-at="2019-04-08T10:52:25Z" finished-at="2019-04-08T10:52:33Z">
+    <test name="PO Search Screen" duration-ms="8999" started-at="2019-06-18T11:10:18Z" finished-at="2019-06-18T11:10:27Z">
       <class name="smokeTestCasesPO.TC02_POSearch">
-        <test-method status="PASS" signature="POSearchScreen()[pri:0, instance:smokeTestCasesPO.TC02_POSearch@dc24521]" name="POSearchScreen" duration-ms="8046" started-at="2019-04-08T16:22:25Z" finished-at="2019-04-08T16:22:33Z">
+        <test-method status="PASS" signature="POSearchScreen()[pri:0, instance:smokeTestCasesPO.TC02_POSearch@192b07fd]" name="POSearchScreen" duration-ms="8998" started-at="2019-06-18T16:40:18Z" finished-at="2019-06-18T16:40:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POSearchScreen -->
       </class> <!-- smokeTestCasesPO.TC02_POSearch -->
     </test> <!-- PO Search Screen -->
-    <test name="Create a new PO" duration-ms="63066" started-at="2019-04-08T10:52:33Z" finished-at="2019-04-08T10:53:36Z">
+    <test name="Create a new PO" duration-ms="110204" started-at="2019-06-18T11:10:27Z" finished-at="2019-06-18T11:12:17Z">
       <class name="smokeTestCasesPO.TC07_NewPO">
-        <test-method status="PASS" signature="NewPO()[pri:0, instance:smokeTestCasesPO.TC07_NewPO@3c0f93f1]" name="NewPO" duration-ms="63065" started-at="2019-04-08T16:22:33Z" finished-at="2019-04-08T16:23:36Z">
+        <test-method status="PASS" signature="NewPO()[pri:0, instance:smokeTestCasesPO.TC07_NewPO@7e0b0338]" name="NewPO" duration-ms="110202" started-at="2019-06-18T16:40:27Z" finished-at="2019-06-18T16:42:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewPO -->
       </class> <!-- smokeTestCasesPO.TC07_NewPO -->
     </test> <!-- Create a new PO -->
+    <test name="Add a new item ordered data in the grid" duration-ms="55263" started-at="2019-06-18T11:12:17Z" finished-at="2019-06-18T11:13:12Z">
+      <class name="smokeTestCasesPO.TC08_ItemsOrdered">
+        <test-method status="PASS" signature="NewPO()[pri:0, instance:smokeTestCasesPO.TC08_ItemsOrdered@31610302]" name="NewPO" duration-ms="55261" started-at="2019-06-18T16:42:17Z" finished-at="2019-06-18T16:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewPO -->
+      </class> <!-- smokeTestCasesPO.TC08_ItemsOrdered -->
+    </test> <!-- Add a new item ordered data in the grid -->
   </suite> <!-- Mercury Test Suite-PO -->
 </testng-results>

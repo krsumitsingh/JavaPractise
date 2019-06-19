@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 26 16:53:14 IST 2018</td>
+<td>Started on:</td><td>Mon May 27 17:49:45 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4025 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25574 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='smokeTestCasesOrders.TC05_order_taxcalculation.orderwithservice()'><b>orderwithservice</b><br>Test class: smokeTestCasesOrders.TC05_order_taxcalculation</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=69.0.3497.100)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;*//label[@id=&apos;taxGridView_cell1_1_taxPercentLabel&apos;]&quot;}
+  (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.02 seconds
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;IITC-WS-QA02&apos;, ip: &apos;172.16.1.123&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SUMIT~1.SIN\AppData\Local\Temp\scoped_dir1732_9250}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: e6aee6cddbe7876021a448649258d0a6
-*** Element info: {Using=xpath, value=*//label[@id=&apos;ctl00_mainContentPlaceHolder_priceTotalTextBoxLabel&apos;]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SUMIT~1.SIN\AppData\Local\Temp\scoped_dir8704_12506}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.169, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 9dd4725b4fb113cc9628728dcca5a9a8
+*** Element info: {Using=xpath, value=*//label[@id=&apos;taxGridView_cell1_1_taxPercentLabel&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -93,19 +94,20 @@ Session ID: e6aee6cddbe7876021a448649258d0a6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at pageObjLibrary.OrdersPage.tax_calculation(OrdersPage.java:448)
+	at pageObjLibrary.OrdersPage.tax_calculation(OrdersPage.java:484)
 	at smokeTestCasesOrders.TC05_order_taxcalculation.orderwithservice(TC05_order_taxcalculation.java:17)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace643290333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace643290333'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=69.0.3497.100)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace947553027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace947553027'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;*//label[@id=&apos;taxGridView_cell1_1_taxPercentLabel&apos;]&quot;}
+  (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.02 seconds
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;IITC-WS-QA02&apos;, ip: &apos;172.16.1.123&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SUMIT~1.SIN\AppData\Local\Temp\scoped_dir1732_9250}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: e6aee6cddbe7876021a448649258d0a6
-*** Element info: {Using=xpath, value=*//label[@id=&apos;ctl00_mainContentPlaceHolder_priceTotalTextBoxLabel&apos;]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SUMIT~1.SIN\AppData\Local\Temp\scoped_dir8704_12506}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.169, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 9dd4725b4fb113cc9628728dcca5a9a8
+*** Element info: {Using=xpath, value=*//label[@id=&apos;taxGridView_cell1_1_taxPercentLabel&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -117,7 +119,7 @@ Session ID: e6aee6cddbe7876021a448649258d0a6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at pageObjLibrary.OrdersPage.tax_calculation(OrdersPage.java:448)
+	at pageObjLibrary.OrdersPage.tax_calculation(OrdersPage.java:484)
 	at smokeTestCasesOrders.TC05_order_taxcalculation.orderwithservice(TC05_order_taxcalculation.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -140,12 +142,12 @@ Session ID: e6aee6cddbe7876021a448649258d0a6
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>4</td>
-<td>smokeTestCasesOrders.TC05_order_taxcalculation@2ac273d3</td></tr>
+<td>25</td>
+<td>smokeTestCasesOrders.TC05_order_taxcalculation@5ce81285</td></tr>
 </table><p>
 </body>
 </html>
