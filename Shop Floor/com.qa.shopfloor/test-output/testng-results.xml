@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35205" started-at="2019-09-25T13:33:47Z" finished-at="2019-09-25T13:34:23Z">
+  <suite name="Default suite" duration-ms="40345" started-at="2019-09-25T13:47:56Z" finished-at="2019-09-25T13:48:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35205" started-at="2019-09-25T13:33:47Z" finished-at="2019-09-25T13:34:23Z">
+    <test name="Default test" duration-ms="40345" started-at="2019-09-25T13:47:56Z" finished-at="2019-09-25T13:48:36Z">
       <class name="com.qa.shopfloor.test.SPLoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="setUp" is-config="true" duration-ms="5006" started-at="2019-09-25T19:03:48Z" finished-at="2019-09-25T19:03:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="setUp" is-config="true" duration-ms="7797" started-at="2019-09-25T19:17:56Z" finished-at="2019-09-25T19:18:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="LoginTest" duration-ms="12142" started-at="2019-09-25T19:03:53Z" data-provider="SPLoginData" finished-at="2019-09-25T19:04:05Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="LoginTest" duration-ms="15196" started-at="2019-09-25T19:18:04Z" data-provider="SPLoginData" finished-at="2019-09-25T19:18:19Z">
           <params>
             <param index="0">
               <value>
@@ -20,27 +20,27 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[vsuser]]>
+                <![CDATA[shopfloor1]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Govirtual~1]]>
+                <![CDATA[shopfloor1*1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="tearDown" is-config="true" duration-ms="1551" started-at="2019-09-25T19:04:05Z" finished-at="2019-09-25T19:04:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="tearDown" is-config="true" duration-ms="2817" started-at="2019-09-25T19:18:19Z" finished-at="2019-09-25T19:18:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="setUp" is-config="true" duration-ms="3412" started-at="2019-09-25T19:04:07Z" finished-at="2019-09-25T19:04:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="setUp" is-config="true" duration-ms="4600" started-at="2019-09-25T19:18:22Z" finished-at="2019-09-25T19:18:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="LoginTest" duration-ms="11542" started-at="2019-09-25T19:04:10Z" data-provider="SPLoginData" finished-at="2019-09-25T19:04:22Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="LoginTest" duration-ms="8470" started-at="2019-09-25T19:18:27Z" data-provider="SPLoginData" finished-at="2019-09-25T19:18:35Z">
           <params>
             <param index="0">
               <value>
@@ -49,19 +49,19 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[vsuser]]>
+                <![CDATA[shopfloor1]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Govirtual~1]]>
+                <![CDATA[shopfloor1*1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="tearDown" is-config="true" duration-ms="934" started-at="2019-09-25T19:04:22Z" finished-at="2019-09-25T19:04:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.shopfloor.test.SPLoginPageTest@6ea12c19]" name="tearDown" is-config="true" duration-ms="924" started-at="2019-09-25T19:18:35Z" finished-at="2019-09-25T19:18:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
