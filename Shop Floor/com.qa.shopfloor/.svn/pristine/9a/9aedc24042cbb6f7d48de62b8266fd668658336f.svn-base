@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.qa.shopfloor.pages;
+
+/**
+ * @author sumit.singh
+ *
+ */
+public class LoginPage {
+
+}

@@ -1,0 +1,13 @@
+package com.qa.shopfloor.test;
+
+import com.qa.shopfloor.base.SPTestBase;
+
+public class SPLoginPageTest extends SPTestBase{
+
+	
+	public SPLoginPageTest() throws Exception {
+		super();
+	
+	}
+
+}
