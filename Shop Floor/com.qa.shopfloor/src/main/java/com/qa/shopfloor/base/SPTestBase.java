@@ -49,7 +49,7 @@ public class SPTestBase {
 	}
 		
 		
-		/* Initializiation Method */
+		/* Initialization Method */
 		public static void initialization() throws Exception{
 			browserName = prop.getProperty("browser");	
 			if(browserName.equals("chrome")){
