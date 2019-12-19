@@ -1,0 +1,80 @@
+package com.qa.printreach.base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+import com.qa.printreach.utilities.Utilities;
+import com.qa.printreach.utilities.WebEventListener;
+
+
+public class TestBase {
+	public static final Logger logger = Logger.getLogger(TestBase.class.getName());
+	public static WebDriver driver;
+	public static Properties prop;
+	public static String browserName = "";
+	String log4jConfigPath = "";
+	public static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
+	
+	
+	
+	/* TestBase Constructor */
+	public TestBase() throws Exception{
+		try{	
+			log4jConfigPath = System.getProperty("user.dir")
+					+"\\src\\main\\java\\com\\qa\\printreach\\config\\log4j.properties";
+			PropertyConfigurator.configure(log4jConfigPath);
+			prop = new Properties();	
+			FileInputStream fl = new FileInputStream(System.getProperty("user.dir")
+				+"\\src\\main\\java\\com\\qa\\printreach\\config\\config.properties");
+			prop.load(fl);		
+			}catch(FileNotFoundException ex){
+			ex.printStackTrace();
+			logger.info("File Not Found");
+		}				
+	}
+	
+	/* Initializiation Method */
+	public static void initialization() throws Exception{
+		browserName = prop.getProperty("browser");	
+		if(browserName.equals("chrome")){
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+					+"\\src\\main\\java\\com\\qa\\printreach\\drivers\\chromedriver.exe");	
+			ChromeOptions options1 = new ChromeOptions();
+			options1.addArguments("--disable-extensions");
+			driver = new ChromeDriver(options1);
+		}
+		else if(browserName.equals("FF")){
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+					+"\\src\\main\\java\\com\\qa\\printreach\\drivers\\geckodriver.exe");	
+			driver = new FirefoxDriver(); 
+		}	
+		
+		e_driver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
+		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(Utilities.PAGE_LOAD_TIME,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Utilities.IMPLICIT_WAIT,TimeUnit.SECONDS);	
+		driver.get(prop.getProperty("url"));
+	}
+	
+	
+	
+	
+	
+}

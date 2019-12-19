@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Test Suite-PO]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Test Suite-Estimates]">
   <test name="Login Test">
     <classes>
-      <class name="smokeTestCasesPO.TC01_Login"/>
+      <class name="smokeTestCasesEstimatesTaxCalculations.TC01_Login"/>
     </classes>
   </test> <!-- Login Test -->
-  <test name="PO Search Screen">
+  <test name="Taxes Calculations">
     <classes>
-      <class name="smokeTestCasesPO.TC02_POSearch"/>
+      <class name="smokeTestCasesEstimatesTaxCalculations.estimate_misctaxescalculations"/>
     </classes>
-  </test> <!-- PO Search Screen -->
-  <test name="Create a new PO">
+  </test> <!-- Taxes Calculations -->
+  <test name="Taxes Calculations(failed)">
     <classes>
-      <class name="smokeTestCasesPO.TC07_NewPO"/>
+      <class name="smokeTestCasesEstimatesTaxCalculations.estimate_misctaxescalculations">
+        <methods>
+          <include name="estimate_taxes"/>
+          <include name="estimate_NoAction"/>
+          <include name="estimate_TC07"/>
+          <include name="estimate_taxes_wizard"/>
+          <include name="estimate_TC06"/>
+          <include name="estimate_TC09"/>
+          <include name="estimate_TC08"/>
+          <include name="estimate_TC05"/>
+          <include name="estimate_TC04"/>
+          <include name="estimate_TC10"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimatesTaxCalculations.estimate_misctaxescalculations -->
+      <class name="smokeTestCasesEstimatesTaxCalculations.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesEstimatesTaxCalculations.TC01_Login -->
     </classes>
-  </test> <!-- Create a new PO -->
-  <test name="Add a new item ordered data in the grid">
-    <classes>
-      <class name="smokeTestCasesPO.TC08_ItemsOrdered"/>
-    </classes>
-  </test> <!-- Add a new item ordered data in the grid -->
-</suite> <!-- Failed suite [Mercury Test Suite-PO] -->
+  </test> <!-- Taxes Calculations(failed) -->
+</suite> <!-- Failed suite [Mercury Test Suite-Estimates] -->

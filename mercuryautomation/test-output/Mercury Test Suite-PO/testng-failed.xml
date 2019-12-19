@@ -21,4 +21,32 @@
       <class name="smokeTestCasesPO.TC08_ItemsOrdered"/>
     </classes>
   </test> <!-- Add a new item ordered data in the grid -->
+  <test name="Create a new PO(failed)">
+    <classes>
+      <class name="smokeTestCasesPO.TC07_NewPO">
+        <methods>
+          <include name="NewPO"/>
+        </methods>
+      </class> <!-- smokeTestCasesPO.TC07_NewPO -->
+      <class name="smokeTestCasesPO.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesPO.TC01_Login -->
+    </classes>
+  </test> <!-- Create a new PO(failed) -->
+  <test name="Add a new item ordered data in the grid(failed)">
+    <classes>
+      <class name="smokeTestCasesPO.TC08_ItemsOrdered">
+        <methods>
+          <include name="NewPO"/>
+        </methods>
+      </class> <!-- smokeTestCasesPO.TC08_ItemsOrdered -->
+      <class name="smokeTestCasesPO.TC01_Login">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- smokeTestCasesPO.TC01_Login -->
+    </classes>
+  </test> <!-- Add a new item ordered data in the grid(failed) -->
 </suite> <!-- Failed suite [Mercury Test Suite-PO] -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PrintReachSuite]">
+  <parameter name="password" value="Govirtual~1"/>
+  <parameter name="username" value="vsuser"/>
+  <test name="PrintReachTest">
+    <parameter name="password" value="Govirtual~1"/>
+    <parameter name="username" value="vsuser"/>
+    <classes>
+      <class name="com.qa.printreach.test.LoginPageTest"/>
+      <class name="com.qa.printreach.test.HomePageTest"/>
+      <class name="com.qa.printreach.test.EstimatePageTest"/>
+    </classes>
+  </test> <!-- PrintReachTest -->
+  <test name="PrintReachTest(failed)">
+    <parameter name="password" value="Govirtual~1"/>
+    <parameter name="username" value="vsuser"/>
+    <classes>
+      <class name="com.qa.printreach.test.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.printreach.test.LoginPageTest -->
+      <class name="com.qa.printreach.test.EstimatePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateEstimateWithServiceTest"/>
+          <include name="validateEstimateWithoutServicesTest"/>
+        </methods>
+      </class> <!-- com.qa.printreach.test.EstimatePageTest -->
+      <class name="com.qa.printreach.test.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.printreach.test.HomePageTest -->
+    </classes>
+  </test> <!-- PrintReachTest(failed) -->
+</suite> <!-- Failed suite [PrintReachSuite] -->
