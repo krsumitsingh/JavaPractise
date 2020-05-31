@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PrintReach]">
+  <parameter name="password" value="Govirtual~1"/>
+  <parameter name="username" value="vsuser"/>
+  <test name="PrintReachLoginTest">
+    <parameter name="password" value="Govirtual~1"/>
+    <parameter name="username" value="vsuser"/>
+    <classes>
+      <class name="com.qa.printreach.PrintReachLogin"/>
+    </classes>
+  </test> <!-- PrintReachLoginTest -->
+</suite> <!-- Failed suite [PrintReach] -->

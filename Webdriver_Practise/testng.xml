@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PrintReach">
+  <test name="PrintReachLoginTest">
+  <parameter name="username" value="vsuser"/>
+  <parameter name="password" value="Govirtual~1"/>
+    <classes>
+      <class name="com.qa.printreach.PrintReachLogin"/>
+    </classes>
+  </test> <!-- PrintReachLoginTest -->
+</suite> <!-- PrintReach -->
